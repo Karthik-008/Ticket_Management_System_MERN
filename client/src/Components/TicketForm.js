@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const TicketForm = () => {
   const apiURL = process.env.REACT_APP_API_URL;
+  axios.defaults.withCredentials = true;
   const [formData, setFormData] = useState({
     TicketID: '',
     CustomerName: '',

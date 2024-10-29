@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const TicketUpdateForm = () => {
   const apiURL = process.env.REACT_APP_API_URL;
+  axios.defaults.withCredentials = true;
   const [ticketID, setTicketID] = useState('');
   const [status, setStatus] = useState('Open');
   const [message, setMessage] = useState('');

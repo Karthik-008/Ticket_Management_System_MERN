@@ -5,6 +5,7 @@ import axios from 'axios';
 
 const ViewForm = () => {
     const apiURL = process.env.REACT_APP_API_URL;
+    axios.defaults.withCredentials = true;
     const [ticketId, setTicketId] = useState();
     const [message, setMessage] = useState('');
     const [ticket, setTicket] = useState(null);
