@@ -7,13 +7,7 @@ require('dotenv').config();
 const PORT = 5000;
 
 const app = express();
-app.use(cors(
-    {
-        origin: ["ticket-management-system-mern-iira2zqti.vercel.app"],
-        methods: ["POST", "GET", "PUT"],
-        credentials: true
-    }
-));
+app.use(cors());
 app.use(express.json());
 app.use('/', routes);
 
