@@ -9,7 +9,7 @@ const PORT = 5000;
 const app = express();
 app.use(cors(
     {
-        origin: ["https://ticket-management-system-mern-3xuhddo69.vercel.app"],
+        origin: ["https://ticket-management-system-mern.vercel.app"],
         methods: ["POST", "GET", "PUT"],
         credentials: true
     }
